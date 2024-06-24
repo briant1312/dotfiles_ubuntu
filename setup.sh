@@ -14,6 +14,11 @@ pip3 install psutil netifaces pulsectl
 sudo apt install gnome-system-monitor python3-tk iw -y
 
 # install neovim
+mkdir ~/neovim && cd ~/neovim
+git clone https://github.com/neovim/neovim
+cd neovim
+make CMAKE_BUILD_TYPE=Release
+sudo make install
 
 # remove automatically made files/directories for files in this directory
 rm -rf ~/.config/i3
