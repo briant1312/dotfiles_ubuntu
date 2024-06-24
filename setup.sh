@@ -1,0 +1,30 @@
+#! /bin/bash
+
+# add nodesource repo to keep node up to date
+curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+
+sudo apt udpate
+sudo apt upgrade -y
+
+# install globally used packages
+sudo apt install nodejs feh compton brightnessctl xclip rofi -y
+
+# install packages used by the bumblee-status bar
+pip3 install psutil netifaces pulsectl
+sudo apt install gnome-system-monitor python3-tk iw -y
+
+# install neovim
+
+# remove automatically made files/directories for files in this directory
+rm -rf ~/.config/i3
+rm -rf ~/.config/nvim
+rm ~/.bashrc
+rm -rf ~/.local/share/fonts
+rm -rf ~/.config/rofi
+
+# add symbolic links for files in this directory
+ln -sf ~/.dotfiles/i3 ~/.config/i3
+ln -sf ~/.dotfiles/nvim ~/.config/nvim
+ln -sf ~/.dotfiles/bashrc ~/.bashrc
+ln -sf ~/.dotfiles/fonts ~/.local/share/fonts
+ln -sf ~/.dotfiles/rofi ~/.config/rofi
