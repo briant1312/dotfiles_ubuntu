@@ -7,7 +7,7 @@ sudo apt update
 sudo apt upgrade -y
 
 # install globally used packages
-sudo apt install nodejs feh compton brightnessctl xclip rofi -y
+sudo apt install make cmake nodejs feh compton brightnessctl xclip rofi -y
 
 # install packages used by the bumblee-status bar
 pip3 install psutil netifaces pulsectl
