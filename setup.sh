@@ -7,7 +7,7 @@ sudo apt update
 sudo apt upgrade -y
 
 # install globally used packages
-sudo apt install make cmake nodejs feh compton brightnessctl xclip rofi -y
+sudo apt install ninja-build gettext unzip build-essential curl make cmake nodejs feh compton brightnessctl xclip rofi -y
 
 # install packages used by the bumblee-status bar
 pip3 install psutil netifaces pulsectl
@@ -26,6 +26,7 @@ rm -rf ~/.config/nvim
 rm ~/.bashrc
 rm -rf ~/.local/share/fonts
 rm -rf ~/.config/rofi
+rm -rf ~/.config/bumblebee-status
 
 # add symbolic links for files in this directory
 ln -sf ~/.dotfiles/i3 ~/.config/i3
@@ -33,3 +34,4 @@ ln -sf ~/.dotfiles/nvim ~/.config/nvim
 ln -sf ~/.dotfiles/bashrc ~/.bashrc
 ln -sf ~/.dotfiles/fonts ~/.local/share/fonts
 ln -sf ~/.dotfiles/rofi ~/.config/rofi
+ln -sf ~/.dotfiles/bumblebee-status ~/.config/bumblebee-status
