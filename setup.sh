@@ -3,7 +3,7 @@
 sudo apt update
 
 # install globally used packages
-sudo apt install ninja-build gettext curl unzip build-essential make cmake nodejs feh compton brightnessctl xclip rofi -y
+sudo apt install ninja-build gettext curl unzip build-essential make cmake nodejs feh compton brightnessctl xclip rofi fonts-font-awesome -y
 
 # install packages used by the bumblee-status bar
 pip3 install psutil netifaces pulsectl
