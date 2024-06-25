@@ -16,7 +16,7 @@ sudo apt install gnome-system-monitor python3-tk iw -y
 # install neovim
 mkdir ~/neovim && cd ~/neovim
 git clone https://github.com/neovim/neovim
-cd neovim
+cd ~/neovim/neovim
 make CMAKE_BUILD_TYPE=Release
 sudo make install
 
