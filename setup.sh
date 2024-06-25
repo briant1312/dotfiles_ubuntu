@@ -1,13 +1,15 @@
 #! /bin/bash
 
+sudo apt update
+sudo apt install curl
+
 # add nodesource repo to keep node up to date
 curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 
 sudo apt update
-sudo apt upgrade -y
 
 # install globally used packages
-sudo apt install ninja-build gettext unzip build-essential curl make cmake nodejs feh compton brightnessctl xclip rofi -y
+sudo apt install ninja-build gettext unzip build-essential make cmake nodejs feh compton brightnessctl xclip rofi -y
 
 # install packages used by the bumblee-status bar
 pip3 install psutil netifaces pulsectl
