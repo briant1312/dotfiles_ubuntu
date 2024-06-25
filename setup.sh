@@ -3,7 +3,7 @@
 # add nodesource repo to keep node up to date
 curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 
-sudo apt udpate
+sudo apt update
 sudo apt upgrade -y
 
 # install globally used packages
